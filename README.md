@@ -1,5 +1,8 @@
 # lex
 L(ogs)Ex(pose) = Lex 
+
+![Lex Luthor 1.gif](https://media.tenor.com/vlcIY1CdG5QAAAAM/lex-luthor-smallville.gif)
+
 I love superman :p
 
 
@@ -10,6 +13,8 @@ I do not wish for a lot of complex functionality.
 Right now, I only want to create a dashboard where you can see and filter logs. 
 Also, I aim for the installation to be as simple as possible. Perhaps scripts, or docker images, or both. Lets see. 
 I will start from VM and then kubernetes and other services. 
+
+![Lex Luthor.gif](https://media.tenor.com/rLku_ZFslQ0AAAAM/lex-luthor-superman.gif)
 
 Users can enter subpath, subdomain. If users cannot get one, I can create a micrologic to provide domain. 
 
