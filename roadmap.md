@@ -4,7 +4,7 @@
 
 ### Week 1-2: Basic Setup and Core Infrastructure
 - [x] Initialize project repository
-- [ ] Set up development environment
+- [x] Set up development environment
 - [ ] Create basic project structure
 - [ ] Implement basic FastAPI application
 - [ ] Set up MongoDB connection
