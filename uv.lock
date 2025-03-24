@@ -2,6 +2,13 @@ version = 1
 revision = 1
 requires-python = ">=3.11"
 
+[manifest]
+members = [
+    "api",
+    "lex",
+    "services",
+]
+
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
@@ -24,6 +31,17 @@ sdist = { url = "https://files.pythonhosted.org/packages/95/7d/4c1bd541d4dffa1b5
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a1/ee/48ca1a7c89ffec8b6a0c5d02b89c305671d5ffd8d3c94acf8b8c408575bb/anyio-4.9.0-py3-none-any.whl", hash = "sha256:9f76d541cad6e36af7beb62e978876f3b41e3e04f2c1fbf0884604c0a9c4d93c", size = 100916 },
 ]
+
+[[package]]
+name = "api"
+version = "0.1.0"
+source = { virtual = "api" }
+dependencies = [
+    { name = "fastapi" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "fastapi", specifier = ">=0.115.12" }]
 
 [[package]]
 name = "fastapi"
@@ -52,12 +70,6 @@ wheels = [
 name = "lex"
 version = "0.1.0"
 source = { virtual = "." }
-dependencies = [
-    { name = "fastapi" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "fastapi", specifier = ">=0.115.12" }]
 
 [[package]]
 name = "pydantic"
@@ -125,6 +137,11 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/71/47/82b5e846e01b26ac6f1893d3c5f9f3a2eb6ba79be26eef0b759b4fe72946/pydantic_core-2.27.2-cp313-cp313-win_amd64.whl", hash = "sha256:953101387ecf2f5652883208769a79e48db18c6df442568a0b5ccd8c2723abee", size = 1990453 },
     { url = "https://files.pythonhosted.org/packages/51/b2/b2b50d5ecf21acf870190ae5d093602d95f66c9c31f9d5de6062eb329ad1/pydantic_core-2.27.2-cp313-cp313-win_arm64.whl", hash = "sha256:ac4dbfd1691affb8f48c2c13241a2e3b60ff23247cbcf981759c768b6633cf8b", size = 1885186 },
 ]
+
+[[package]]
+name = "services"
+version = "0.1.0"
+source = { virtual = "services" }
 
 [[package]]
 name = "sniffio"
