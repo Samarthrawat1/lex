@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Dict, Optional, Union
 from enum import Enum
-from pydantic import BaseModel, Field, validator, field_validator
+from pydantic import BaseModel, Field, field_validator
 
 class LogLevel(str, Enum):
     DEBUG = "DEBUG"
