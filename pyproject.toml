@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Lex Luthor goes brrr"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "ruff>=0.11.2",
+]
 
 [tool.uv.workspace]
 members = ["api", "services"]
